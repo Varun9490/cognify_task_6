@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .gradient-bg {
+        background: linear-gradient(to right, #1e3a8a, #1d4ed8);
+      }
+    </style>
+  </head>
+  <body
+    class="gradient-bg text-white min-h-screen flex flex-col items-center justify-center"
+  >
+    <div class="container mx-auto p-4 fade-in">
+      <h1 class="text-4xl font-bold mb-4">Welcome to the Home Page</h1>
+      <p class="text-lg mb-6">Explore our application using the links below:</p>
+      <nav>
+        <ul class="space-y-4">
+          <li><a href="/login" class="text-lg hover:underline">Login</a></li>
+          <li>
+            <a href="/register" class="text-lg hover:underline">Register</a>
+          </li>
+          <li>
+            <a href="/dashboard" class="text-lg hover:underline">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>
